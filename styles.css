@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.banner div {
+  display: flex;
+  gap: 25px;
+}
+
+.art-container {
+  border: 1px solid green;
+  display: flex;
+  gap: 30px;
+}
+
+.title-img {
+  height: 300px;
+  width: 800px;
+}
+
+.art-info {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.art-info .title {
+  width: 250px;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.art-info .art-paragraph {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  color: gray;
+  gap: 60px;
+}
+
+.art-info .art-paragraph button {
+  height: 45px;
+  width: 165px;
+  background-color: orangered;
+  color: azure;
+  font-size: large;
+}
+
+.side-art {
+  width: 300px;
+  padding: 20px;
+  align-items: center;
+  background-color: black;
+  color: azure;
+}
+.side-art h1 {
+  color: goldenrod;
+}
+.side-art p {
+  color: grey;
+}
+.side-art .line {
+  background-color: gray;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 1px;
+  width: auto;
+}
+
+.btm-art {
+  display: flex;
+  padding-top: 40px;
+}
+.btm-art img {
+  height: 120px;
+  padding-right: 10px;
+}
+.btm-art .art-1,
+.btm-art .art-2,
+.btm-art .art-3 {
+  display: flex;
+}
+.btm-art .art-1 div,
+.btm-art .art-2 div,
+.btm-art .art-3 div {
+  flex-direction: column;
+}
+
+
