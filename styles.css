@@ -9,6 +9,9 @@ body {
   justify-content: space-between;
   padding-bottom: 40px;
 }
+.banner .icon-menu{
+  display: none;
+}
 .banner div {
   display: flex;
   gap: 25px;
