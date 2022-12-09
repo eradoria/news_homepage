@@ -7,37 +7,38 @@ body {
 .banner {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding-bottom: 40px;
 }
-
 .banner div {
   display: flex;
   gap: 25px;
 }
+.banner a {
+  color: gray;
+  text-decoration: none;
+}
 
 .art-container {
-  border: 1px solid green;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
-
+.mobile-img {
+  display: none;
+}
 .title-img {
   height: 300px;
-  width: 800px;
+  width: 820px;
 }
-
 .art-info {
   display: flex;
-  gap: 60px;
+  gap: 20px;
   justify-content: space-between;
 }
-
 .art-info .title {
-  width: 250px;
-  font-size: x-large;
+  width: 450px;
+  font-size: 30px;
   font-weight: 900;
 }
-
 .art-info .art-paragraph {
   width: 320px;
   display: flex;
@@ -47,7 +48,6 @@ body {
   color: gray;
   gap: 60px;
 }
-
 .art-info .art-paragraph button {
   height: 45px;
   width: 165px;
@@ -57,8 +57,8 @@ body {
 }
 
 .side-art {
-  width: 300px;
-  padding: 20px;
+  width: 350px;
+  padding: 20px 0px 20px 20px;
   align-items: center;
   background-color: black;
   color: azure;
@@ -80,20 +80,60 @@ body {
 .btm-art {
   display: flex;
   padding-top: 40px;
+  justify-content: space-between;
 }
 .btm-art img {
-  height: 120px;
-  padding-right: 10px;
+  height: 140px;
+  padding-right: 20px;
+  padding-top: 25px;
 }
 .btm-art .art-1,
 .btm-art .art-2,
 .btm-art .art-3 {
   display: flex;
+  width: 400px;
 }
 .btm-art .art-1 div,
 .btm-art .art-2 div,
 .btm-art .art-3 div {
   flex-direction: column;
+  color: grey;
+}
+.btm-art .art-1 h2,
+.btm-art .art-2 h2,
+.btm-art .art-3 h2 {
+  color: black;
 }
 
+.attribution {
+  padding-top: 50px;
+}
 
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .banner {
+    width: 600px;
+  }
+  .banner a {
+    display: none;
+  }
+
+  .title-img {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 370px;
+    display: block;
+  }
+
+  .art-container,
+  .art-info,
+  .btm-art {
+    flex-direction: column;
+  }
+}
